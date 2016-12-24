@@ -30,13 +30,11 @@ Using a private registry running on port 5000, a sample YAML might look like:
 ```
 image: myprivreg:5000/someimage:latest
 manifests:
-  -
-    image: myprivreg:5000/someimage:ppc64le
+  - image: myprivreg:5000/someimage:ppc64le
     platform:
       architecture: ppc64le
       os: linux
-  -
-    image: myprivreg:5000/someimage:amd64
+  - image: myprivreg:5000/someimage:amd64
     platform:
       architecture: amd64
       features:
